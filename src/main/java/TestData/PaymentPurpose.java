@@ -2,9 +2,8 @@ package TestData;
 
 public enum PaymentPurpose {
     REPLRNISHMENT_BORROWERS_BALANCE("Пополнение  баланса заемщика НДС не облагается\n"),
-    USER("Комиссия банка"),
-    GUEST("Поступление по займам выданным");
-
+    BANK_COMISSION("Комиссия банка"),
+    RECEIPT_OF_ISSUED_LOANS("Поступление по займам выданным");
 
     private final String description;
 
