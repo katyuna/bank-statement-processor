@@ -1,8 +1,8 @@
 package Requests;
 
-import Utils.SratementTestDataGenerator;
+import TestData.SratementTestDataGenerator;
 
-public class StatementCreator {
+public class StatementCreatorRequest {
     ///bank-statements-processor/v1/statements
     SratementTestDataGenerator testDataGenerator = new SratementTestDataGenerator();
     String requestJson = testDataGenerator.updateStatement();

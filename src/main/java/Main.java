@@ -1,9 +1,9 @@
-import Requests.StatementCreator;
+import Requests.StatementCreatorRequest;
 
 public class Main {
     public static void main(String[] args) {
 
-        StatementCreator statementCreator = new StatementCreator();
+        StatementCreatorRequest statementCreator = new StatementCreatorRequest();
         System.out.println(statementCreator.getRequestJson());
 
         }

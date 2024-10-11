@@ -1,5 +1,6 @@
-package Utils;
+package TestData;
 
+import Utils.PojoJsonParser;
 import com.google.gson.Gson;
 import models.Operation;
 import models.Statement;
