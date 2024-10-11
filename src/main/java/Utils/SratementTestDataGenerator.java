@@ -23,9 +23,9 @@ public class SratementTestDataGenerator {
             "    \"saldoOut\": 14998040.9,\n" +
             "    \"operations\": [\n" +
             "      {\n" +
-            "        \"operationId\": 187984381,\n" +
+            "        \"operationId\": 187984281,\n" +
             "        \"isDeleted\": false,\n" +
-            "        \"docNumber\": 323182,\n" +
+            "        \"docNumber\": 323281,\n" +
             "        \"docDate\": \"2024-09-17T00:19:10.585307\",\n" +
             "        \"docTypeId\": 1,\n" +
             "        \"transactionDate\": \"2024-09-17\",\n" +
@@ -52,6 +52,17 @@ public class SratementTestDataGenerator {
 
     public String updateStatement(){
         Statement statement = PojoJsonParser.parseToPojo (json);
+
+        int currentStatementId = statement.getStatementId();
+        int currentOperationId = statement.getOperations().get(0).getOperationId();
+        int currentDocNumber = statement.getOperations().get(0).getDocNumber();
+
+       statement.setStatementId(++currentStatementId); // Обновляем StatementId
+
+        for (Operation operation : statement.getOperations()) {
+            operation.setOperationId(++currentOperationId);  // Обновляем OperationId
+            operation.setDocNumber(++currentDocNumber);        // Обновляем Number
+        }
 
         // Устанавливаем текущее время в формате ISO-8601
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ss.SSSSSS'Z'");

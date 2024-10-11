@@ -11,13 +11,12 @@ public class StatementCreator {
         return requestJson;
     }
 
-    public void printStatement(String str){
-        System.out.println(str);
+public void sendStatementCreatorRequest(String url, String body){
+
+}
 
 
         //Пополнение баланса заемщика НДС не облагается
 
 
     }
-
-}
