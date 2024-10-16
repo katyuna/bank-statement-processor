@@ -7,7 +7,7 @@ public enum PaymentPurpose {
 
     private final String description;
 
-    //Конструктор и геттеh, которые позволяют получить строковое значение
+    //Конструктор и геттер, которые позволяют получить строковое значение
     PaymentPurpose(String description) {
         this.description = description;
     }

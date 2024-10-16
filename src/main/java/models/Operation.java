@@ -57,6 +57,9 @@ public class Operation {
         this.transactionDate = transactionDate;
     }
 
+    public void setPaymentDescription(String paymentDescription) {
+        this.paymentDescription = paymentDescription;
+    }
 
     @Override
     public String toString() {
