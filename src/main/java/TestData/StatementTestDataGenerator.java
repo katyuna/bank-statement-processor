@@ -24,14 +24,14 @@ public class StatementTestDataGenerator {
             "    \"saldoOut\": 14998040.9,\n" +
             "    \"operations\": [\n" +
             "      {\n" +
-            "        \"operationId\": 189391766,\n" +
+            "        \"operationId\": 189391662,\n" +
             "        \"isDeleted\": false,\n" +
-            "        \"docNumber\": 323766,\n" +
+            "        \"docNumber\": 323662,\n" +
             "        \"docDate\": \"2024-09-17T00:19:10.585307\",\n" +
             "        \"docTypeId\": 1,\n" +
             "        \"transactionDate\": \"2024-09-17\",\n" +
-            "        \"expenseTypeId\": 2,\n" +
-            "        \"docAmount\": 667,\n" +
+            "        \"expenseTypeId\": 1,\n" +
+            "        \"docAmount\": 44.44,\n" +
             "        \"companyInn\": \"383701469780\",\n" +
             "        \"companyBankBik\": \"042202603\",\n" +
             "        \"companyKpp\": 111,\n" +

@@ -20,7 +20,7 @@ public class RestClient {
             .post(url);
     }
 
-        //Базовая спецификация для всех запросов
+     //Базовая спецификация для всех запросов
     //Content-type всегда application/json
     //URL всегда BASE_URL
     protected RequestSpecification getBaseSpec(){

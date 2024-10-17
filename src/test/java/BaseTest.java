@@ -8,7 +8,7 @@ public class BaseTest {
     public static void setup() {
         // Настройка базового URL
         RestAssured.useRelaxedHTTPSValidation(); // Отключить проверку SSL
-        RestAssured.baseURI = "https://seller-loans-ingress-controller.seller-loans.k8s.stage-xc";
+        RestAssured.baseURI = "https://seller-loans-ingress-controller.seller-loans.k8s.stage-xc/bank-statements-processor";
 
     }
 }

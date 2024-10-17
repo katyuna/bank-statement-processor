@@ -1,23 +1,33 @@
 import TestData.PaymentPurpose;
 import TestData.StatementTestDataGenerator;
 import Utils.RestClient;
+import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import org.junit.Test;
+
 
 import static Utils.RestClient.BASE_URL;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class CreateStatementsStatusCodeTest extends BaseTest{
 
+
     public final String STATEMENT_PATH = BASE_URL + "/v1/statements";
     @Test
     public void testCreateStatement(){
-        String json1 = StatementTestDataGenerator.updateStatement(PaymentPurpose.BANK_COMISSION.getPaymentPurpose());
+        RestAssured.useRelaxedHTTPSValidation();
+        String json1 = StatementTestDataGenerator.updateStatement(PaymentPurpose.REPLRNISHMENT_BORROWERS_BALANCE.getPaymentPurpose());
+
         RestClient restClient = new RestClient();
         Response response = restClient.sendPostRequest("Content-Type", "application/json", json1,STATEMENT_PATH);
 
         // Проверка, что статус код ответа равен 200
         int statusCode = response.getStatusCode();
+
+        System.out.println(response);
+
+        System.out.println(statusCode);
+
         assertEquals(200, statusCode, "Статус код ответа должен быть 200");
 
     }

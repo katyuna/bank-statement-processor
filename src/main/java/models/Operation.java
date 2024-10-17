@@ -8,7 +8,7 @@ public class Operation {
     public int docTypeId;
     public String transactionDate;
     public int expenseTypeId;
-    public int docAmount;
+    public double docAmount;
     public String companyInn;
     public String companyBankBik;
     public Object companyKpp;
