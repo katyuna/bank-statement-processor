@@ -27,6 +27,8 @@ public class CreateStatementsStatusCodeTest extends BaseTest{
 
 
 
+
+
     //для каждого PaymentPurpose отправить запрос на создание выписки
     //при этом каждый раз сохранить operationId
     //и проверить что код 200
