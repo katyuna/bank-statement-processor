@@ -31,7 +31,7 @@ public class StatementTestDataGenerator {
             "        \"docTypeId\": 1,\n" +
             "        \"transactionDate\": \"2024-09-17\",\n" +
             "        \"expenseTypeId\": 1,\n" +
-            "        \"docAmount\": 44.44,\n" +
+            "        \"docAmount\": 33.33,\n" +
             "        \"companyInn\": \"383701469780\",\n" +
             "        \"companyBankBik\": \"042202603\",\n" +
             "        \"companyKpp\": 111,\n" +
